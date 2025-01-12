@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+}
+
+
+body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container{
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.card{
+    width: 90%;
+    max-width: 90%;
+    text-align: center;
+    margin: auto;
+    background-color: #222;
+    padding: 10px;
+    box-shadow: 2px 2px 5px 5px rgba(255, 255, 255, 0.4);
+    animation: fadeInCard 3s ease-in-out forwards;
+}
+
+@keyframes fadeInCard{
+    0%{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card img{
+    width: 50%;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    animation: fadeInImage 3s ease-in-out forwards;
+}
+
+@keyframes fadeInImage{
+    0%{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#country{
+    color: lightblue;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#description{
+    font-size: 1rem;
+}
+
+#country, #description{
+    animation: fadeInText 3s ease-in-out forwards;
+}
+
+@keyframes fadeInText {
+    0%{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    animation: fadeInLinks 3s ease-in-out forwards;
+}
+
+@keyframes fadeInLinks {
+    0%{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.links a{
+    color: #fff;
+    text-decoration: none;
+    background-color: #2e3238;
+    margin-top: 5%;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.5s ease-in, box-shadow 0.5s ease;
+}
+
+.links a:hover{
+    background-color: rgb(139, 214, 27);
+    box-shadow: 2px 2px 2px 5px rgba(255, 255, 148, 0.3);
+}
+
